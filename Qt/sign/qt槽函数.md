@@ -88,20 +88,29 @@ void Widget::btnSlot() {}
 
 1.点击编辑信号/槽（F4）（图1），进入编辑模式（图2）。
 
-- ![image-20240413213814330](D:\AppDate\Roaming\Typora\typora-user-images\image-20240413213814330.png)
-- ![image-20240413214308930](D:\AppDate\Roaming\Typora\typora-user-images\image-20240413214308930.png)
+- 1
 
+![](qt槽函数.assets/image-20240413222326036.png)
 
+- 2
 
-2.点击按钮拖到边界，会出现图3所示界面，再Widget选框中加入槽或信号。
+![](qt槽函数.assets/image-20240413214308930.png)
 
-- ![](D:\AppDate\Roaming\Typora\typora-user-images\image-20240413214227470.png)
+2.点击按钮拖动，会出现图3所示界面，再Widget选框中加入槽或信号。
+
+- 3
+
+![](qt槽函数.assets/image-2024-04-13-214216.png)
 
 3.选定pushButton的一个信号与之联系（图4），结果如图5。
 
-![image-20240413214654173](D:\AppDate\Roaming\Typora\typora-user-images\image-20240413214654173.png)
+- 4
 
-![image-20240413214710724](D:\AppDate\Roaming\Typora\typora-user-images\image-20240413214710724.png)
+![](qt槽函数.assets/image-2024-04-13-214641.png)
+
+5
+
+![](qt槽函数.assets/image-2024-04-13-214706.png)
 
 ```C++
 #include "widget.h"
@@ -134,11 +143,15 @@ void Widget::myslot1() { QMessageBox::information(this, "tile", "clicked"); }
 
 1.右键点击控件，点击转到槽（图6）。
 
-![image-20240413215324979](D:\AppDate\Roaming\Typora\typora-user-images\image-20240413215324979.png)
+- 6
+
+![](qt槽函数.assets/image-2024-04-13-215323.png)
 
 2.选择对应的信号（图7），会自动生成槽函数。
 
-![image-20240413215451614](D:\AppDate\Roaming\Typora\typora-user-images\image-20240413215451614.png)
+- 7
+
+![](qt槽函数.assets/image-2024-04-13-215421.png)
 
 ```C++
 void Widget::on_pushButton_clicked()
