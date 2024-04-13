@@ -25,8 +25,6 @@ void Widget::btnSlot() { QMessageBox::information(this, "tile", "clicked"); }
 
 ```
 
-
-
 ## 二、Qt5写法
 
 `connect(ui->btnOpen, &QPushButton::clicked, this, &Widget::open);`
@@ -55,7 +53,7 @@ void Widget::btnSlot() { QMessageBox::information(this, "tile", "clicked"); }
 
 `connect(ui->btnOpen, &QPushButton::clicked,[=](){`
 
-`    //具体代码`
+`//具体代码`
 
 `});`
 
@@ -90,27 +88,27 @@ void Widget::btnSlot() {}
 
 - 1
 
-![](qt槽函数.assets/image-20240413222326036.png)
+![这是一张示例图片](qt槽函数.assets/image-20240413222326036.png)
 
 - 2
 
-![](qt槽函数.assets/image-20240413214308930.png)
+![这是一张示例图片](qt槽函数.assets/image-20240413214308930.png)
 
 2.点击按钮拖动，会出现图3所示界面，再Widget选框中加入槽或信号。
 
 - 3
 
-![](qt槽函数.assets/image-2024-04-13-214216.png)
+![这是一张示例图片](qt槽函数.assets/image-2024-04-13-214216.png)
 
 3.选定pushButton的一个信号与之联系（图4），结果如图5。
 
 - 4
 
-![](qt槽函数.assets/image-2024-04-13-214641.png)
+![这是一张示例图片](qt槽函数.assets/image-2024-04-13-214641.png)
 
 5
 
-![](qt槽函数.assets/image-2024-04-13-214706.png)
+![这是一张示例图片](qt槽函数.assets/image-2024-04-13-214706.png)
 
 ```C++
 #include "widget.h"
@@ -145,13 +143,13 @@ void Widget::myslot1() { QMessageBox::information(this, "tile", "clicked"); }
 
 - 6
 
-![](qt槽函数.assets/image-2024-04-13-215323.png)
+![这是一张示例图片](qt槽函数.assets/image-2024-04-13-215323.png)
 
 2.选择对应的信号（图7），会自动生成槽函数。
 
 - 7
 
-![](qt槽函数.assets/image-2024-04-13-215421.png)
+![这是一张示例图片](qt槽函数.assets/image-2024-04-13-215421.png)
 
 ```C++
 void Widget::on_pushButton_clicked()
@@ -160,4 +158,3 @@ void Widget::on_pushButton_clicked()
 }
 
 ```
-
